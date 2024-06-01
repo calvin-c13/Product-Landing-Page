@@ -94,8 +94,10 @@
 
         <section id="reviews" class="review-section">
             <h2 class="section-header youtube-header">YOUTUBE SHOE REVIEWS</h2>
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N3psbmXe6ag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-FiQoTOerO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class = "iframe-container">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N3psbmXe6ag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-FiQoTOerO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="contact" class="contact-section">
@@ -107,7 +109,6 @@
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" placeholder="Message" required></textarea>
-                <!-- Changed button to input with id="submit" -->
                 <input type="submit" id="submit" value="Submit">
             </form>
         </section>
