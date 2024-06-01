@@ -168,11 +168,16 @@ body {
 }
 
 
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 iframe {
-    max-width: 45%;
-    height: 300px;
-    margin: 20px;
-    box-sizing: border-box;
+    width: 50%;
+    height: 500px; /* Adjust this if needed */
+    margin: 0 10px; /* Add some space between iframes */
 }
 
 
