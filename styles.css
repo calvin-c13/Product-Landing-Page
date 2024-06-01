@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ec9c86;
+}
+
+#header {
+    background-color: #ec9c86;
+    padding: 20px 20px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#header-img {
+    max-width: 100px;
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    z-index: 2;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    align-items:flex-end;
+}
+
+#nav-bar li {
+    margin: 0 15px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    padding: 20px;
+    font-size: 1vw;
+    letter-spacing: 1.1px;
+}
+
+#nav-bar a:hover {
+    color: black; 
+}
+
+#ant-bench {
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.main {
+    text-align: center;
+    padding-top: 80px; 
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-header {
+    position:absolute;
+    top: 7vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    letter-spacing: .3rem;
+    color: white;
+}
+
+.image-paragraph {
+    position: absolute;
+    top: 13.8vw; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6vw; 
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    color: white;
+    letter-spacing: .1rem;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+#clothes, #shoes, #reviews, #contact {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+}
+
+/* Flexbox for product gallery */
+.product-gallery {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap; 
+}
+
+
+.product-item {
+    flex: 1 1 200px;
+    margin: 20px; 
+    max-width: 30%; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-item h3, .product-item p {
+    margin: 10px 0;
+    letter-spacing: 0.4px;
+}
+
+.product-item .buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ec9c86;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .buy-button:hover {
+    background-color: #d4876d;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+.review-section {
+    display: flexbox;
+
+}
+
+.youtube-header {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+iframe {
+    max-width: 45%;
+    height: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .image-header {
+        font-size: 4vw;
+    }
+
+    #nav-bar a {
+        font-size: 1.5vw;
+        padding: 10px;
+    }
+
+    #header-img {
+        max-width: 85px;
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 992px) {
+    .image-header {
+        font-size: 4vw;
+        padding-top: 4vw;
+    }
+    .image-paragraph {
+        padding-top: 4.2vw;
+    }
+    #nav-bar a {
+        font-size: 1.45vw;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-header {
+        font-size: 4vw;
+    }
+
+    #nav-bar a {
+        font-size: 1.1vw;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-header {
+        font-size: 4vw;
+        padding-top: 8vw;
+    }
+    .image-paragraph {
+        padding-top: 6vw;
+    }
+    #nav-bar a {
+        font-size: 1vw;
+        padding: 8px;
+    }
+}
